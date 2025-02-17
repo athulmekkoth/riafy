@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Appointment</title>
+    <link rel="stylesheet" href="./index.css">
+    <style>
+        #booking-form {
+            font-family: Arial, sans-serif;
+            max-width: 400px;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            background-color: #f9f9f9;
+        }
+
+        h3 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        input,
+        select,
+        button {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+
+        button:disabled {
+            background-color: #ccc;
+        }
+
+        #status-message {
+            text-align: center;
+            color: #d9534f;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Book Your Appointment</h1>
+
+
+    <div id="widget-container"></div>
+
+
+    <script src="/components/AppointmentWidget.js"></script>
+
+    <script>
+
+        document.addEventListener("DOMContentLoaded", () => {
+            AppointmentWidget("widget-container", "http://localhost:8080");
+        });
+    </script>
+</body>
+
+</html>

@@ -4,7 +4,7 @@ import { bookAppointment, getAvailableSlots } from "../components/UserController
 const bookingRoute= express.Router()
 
 
-bookingRoute.post("/getSlot",getAvailableSlots)
-bookingRoute.post("/book",bookAppointment)
+bookingRoute.get("/getSlot",getAvailableSlots)
+bookingRoute.post("/bookSlot",bookAppointment)
 
 export default bookingRoute
