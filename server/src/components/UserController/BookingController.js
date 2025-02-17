@@ -3,7 +3,6 @@ import express from "express"
 export const getAvailableSlots = async (req, res) => {
   const { date } = req.query; 
 
-console.log(date)
   if (!date) {
     return res.status(400).json({ error: "Date parameter is required." });
   }
