@@ -1,6 +1,8 @@
-# How to Run the App
+#Booking App
 
-## Go to the server folder and run 
+### How to Run the App
+
+### Go to the server folder and run 
 
 * npm i
 
